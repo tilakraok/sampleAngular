@@ -1,0 +1,14 @@
+<div  ng-controller="View3Ctrl as invoice">
+	<b>Calculator:</b>
+	<div>Number1:
+		<input type="text" ng-model="invoice.number1">
+	</div>
+	<select ng-model="invoice.inCurr">
+      <option ng-repeat="c in invoice.operator">{{c}}</option>
+    </select>
+	<div>Number2: 
+		<input type="text" ng-model="invoice.number2">
+	</div>
+	<button class="btn" ng-click="invoice.total()">Calculate</button>
+	<input type="text" ng-model="invoice.result">
+</div>
